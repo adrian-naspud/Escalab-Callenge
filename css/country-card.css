@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+  --blue: #10172A;
+  --white: #F55F5;
+  --blueLigth: rgba(79, 103, 168, .6);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.sec_c1 {
+  width: 98%;
+  height: 50vh;
+  margin: 1%;
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
+  background-image: url(../Images/globe.jpg);
+  background-size: 100% 50vh;
+  filter: opacity(90%);
+}
+
+.content_card {
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 0 1rem rgb(85, 84, 84);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 20px;
+  background: #f5f5f5;
+
+}
+
+.content_card:hover {
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.733);
+}
+
+/* Section C2 */
+.sec_c2 {
+  width: 882px;
+  height: auto;
+  margin: 0 1%;
+  border-radius: 30px 30px 0 0;
+}
+
+/* card */
+.card1 {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1_text {
+  width: 50%;
+  font-size: 40px;
+  color: #000;
+}
+
+.card1_info {
+  width: 50%;
+  height: 300px;
+  background: rgb(233, 193, 120);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.card1_img {
+  border-radius: 15%;
+  max-height: 120px;
+}
+
+.card1_link {
+  display: block;
+}
+
+
+@media (min-width: 1320px) {
+  .sec_c1 {
+    width: 1300px;
+  }
+}
+
+@media (max-width:900px) {
+  .sec_c2 {
+    width: 98%;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .card1 {
+    flex-direction: column;
+    height: 450px;
+  }
+
+  .card1_text {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .card1_info {
+    width: 100%;
+    max-height: 70%;
+  }
+
+  .sec_c2 {
+    height: 450px;
+  }
+
+  .content_card {
+    height: 450px;
+  }
+
+}
